@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import CallsToAction from "../lib/cta";
 import CTA from "../components/CTA";
 import ConnectorCount from "../lib/connector_count";
+import bannerImage from "../public/resources/banner-image.png";
+import Image from "next/image";
 
 const Home = () => (
   <>
@@ -41,42 +43,23 @@ const Home = () => (
 const Hero = () => (
   <div className="relative bg-gray-50">
     <div className="w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:pt-36 lg:pb-20 lg:text-left">
-        <div className="px-4 sm:px-8 xl:pr-8">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span className="block xl:inline">ELT connectors</span>{" "}
-            <span className="block text-blue-600 xl:inline">built on-demand</span>
+      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-4xl pt-16 text-center lg:pt-36 lg:pb-20 lg:text-left gap-x-1.5 justify-between">
+        <div className="  mx-auto">
+          <h1 className="text-2xl tracking-tight  text-gray-500 sm:text-3xl md:text-1xl lg:text-2xl xl:text-4xl font-semibold uppercase">
+            <span className="   text-gray-600 font-bold">Hubspot </span> To
+            <span className="block text-gray-600  font-bold">
+              Snoflake{" "}
+              <span className="sm:text-3xl md:text-1xl lg:text-2xl xl:text-4xl font-semibold text-gray-500">
+                Data
+              </span>
+            </span>
+            <span className="block text-gray-600  font-bold">Cloud ETL</span>
+            <span className="block ">Intergration With</span>
+            <span className="block text-gray-600 font-bold">Fivertran</span>
           </h1>
-          <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Access {ConnectorCount.total} fully-managed connectors and lightning fast custom development. {" "}
-            <span className="text-gray-800 font-bold">Stop searching for the connector you need.</span> We&apos;ll build it for you in less than 24 hours.<br></br><br></br>
-            Hands on support. Flat rate pricing. No credit card required.
-          </p>
-          <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-md shadow">
-              <a
-                href={CallsToAction.ExploreTheProduct.href}
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-16"
-                >
-                {CallsToAction.ExploreTheProduct.text}
-              </a>           
-           </div>
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href={CallsToAction.RequestAConnector.href}
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-700 hover:text-white md:py-4 md:text-lg md:px-16"
-                >
-                {CallsToAction.RequestAConnector.text}
-              </a>           
-            </div>
-          </div>
         </div>
-        <div className="h-full mt-4 lg:-mt-8">
-          <iframe
-            src="https://www.loom.com/embed/84f78dcb72e6493393c8f869082149e4"
-            className="w-full h-full"
-            allowFullScreen
-          />
+        <div className="w-4/4  mx-auto  mt-4 lg:-mt-8 px-8">
+          <Image src={bannerImage} alt="" className="object-cover" />
         </div>
       </div>
     </div>
@@ -86,7 +69,7 @@ const Hero = () => (
 const Features = () => (
   <div className="py-16 bg-gray-50 overflow-hidden lg:pt-24 lg:pb-2">
     <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
-      <svg
+      {/* <svg
         className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
         width={404}
         height={784}
@@ -118,20 +101,18 @@ const Features = () => (
           height={784}
           fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)"
         />
-      </svg>
+      </svg> */}
 
       <div className="flex flex-col">
-        <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Finally, an ELT tool that supports the long tail of business applications
+        <h2 className="text-center text-3xl font-semibold tracking-tight text-gray-900 sm:text-2xl">
+          WHAT WE DO
         </h2>
-        <div className="flex w-full align-center justify-center">
+        {/* <div className="flex w-full align-center justify-center">
           <img className="max-w-xl" src="hero.svg" alt="" />
-        </div>
-        <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-          We specialize in tough to find ELT connectors for analytics teams. No
-          more scripts, infrastructure, or missing data. We offer the most
-          comprehensive coverage, fastest development, and a catalog of{" "}
-          {ConnectorCount.total} ELT connectors to help you get insights fast.
+        </div> */}
+        <p className="mt-4 w-2/5 mx-auto text-center text-xl text-gray-700 font-semibold">
+          Connect all your data sources to a data warehouse in minutes not
+          months
         </p>
       </div>
 
@@ -188,7 +169,7 @@ const Features = () => (
         </div>
       </div>
 
-      <svg
+      {/* <svg
         className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12"
         width={404}
         height={784}
@@ -220,7 +201,7 @@ const Features = () => (
           height={784}
           fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
         />
-      </svg>
+      </svg> */}
 
       <div className="relative mt-36 lg:mt-12">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
