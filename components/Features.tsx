@@ -16,7 +16,7 @@ const Features = () => (
           </p>
         </div>
 
-        <div className="flex lg:flex-row md:flex-col flex-col  justify-center gap-14 items-center mt-5">
+        <div className="flex lg:flex-row md:flex-row flex-col  justify-center gap-14 items-center mt-5">
           {" "}
           {data.map((item, index) => {
             return (

@@ -28,16 +28,6 @@ const Contact = () => {
             >
               Sign Up
             </a>
-            {/* <a
-              style={{
-                marginLeft: "-50px",
-              }}
-              className="bg-yellow-300 rounded-full lg:py-4 px-8 text-white font-medium cursor-pointer"
-              href="
-   "
-            >
-              Signup
-            </a> */}
           </div>
         </form>
       </div>
