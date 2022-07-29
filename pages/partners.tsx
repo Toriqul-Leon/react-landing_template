@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import CallsToAction from "../lib/cta";
-import CTA from "../components/CTA";
 import Head from "next/head";
 
 const Partners = () => (

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Hubspot",
+    "logo": "/resources/hubspot.svg",
+    "description": "HubSpot is inbound marketing and sales software. The Stitch HubSpot integration will ETL HubSpot data to your warehouse, giving you access to raw customer data, without the headache of writing and maintaining ETL scripts."
+  },
+  {
+    "id": 2,
+    "title": "Snowflake",
+    "logo": "/resources/snowflake.svg",
+    "description": "Snowflake is a SQL data warehouse built from the ground up for the cloud and designed with a patented new architecture to handle today’s and tomorrow’s data and analytics."
+  }
+]

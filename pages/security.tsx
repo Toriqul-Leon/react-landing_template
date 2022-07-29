@@ -6,7 +6,7 @@ import {
   ShieldExclamationIcon,
   SwitchHorizontalIcon,
 } from "@heroicons/react/outline";
-import CTA from "../components/CTA";
+import Info from "../components/Info";
 import Head from "next/head";
 
 const Security = () => (
@@ -30,7 +30,7 @@ const Security = () => (
     <Header />
     <Hero />
     <Features />
-    <CTA />
+    <Info />
     <Footer />
   </>
 );
