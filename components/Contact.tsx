@@ -12,24 +12,32 @@ const Contact = () => {
       </div>
       <div>
         <form>
-          <div className="flex ">
+          <div className="flex">
             <input
-              style={{
-                paddingRight: "50px",
-              }}
-              className="rounded-full lg:py-4 lg:px-40"
+              className="rounded-full lg:py-4 lg:px-40 pr-24"
               type="email"
               name="mail"
               id=""
             />
-            <input
+            <a
+              style={{
+                marginLeft: "-50px",
+              }}
+              href="https://app.portable.io/login"
+              className="px-8 py-2 lg:pt-4 bg-yellow-300 no-underline rounded-full text-white font-medium cursor-pointer"
+            >
+              Sign Up
+            </a>
+            {/* <a
               style={{
                 marginLeft: "-50px",
               }}
               className="bg-yellow-300 rounded-full lg:py-4 px-8 text-white font-medium cursor-pointer"
-              type="submit"
-              value="Signup"
-            />
+              href="
+   "
+            >
+              Signup
+            </a> */}
           </div>
         </form>
       </div>
