@@ -1,21 +1,31 @@
-import CallsToAction from "../lib/cta";
+import Image from "next/image";
+import techBg from "../public/resources/technology-bg.png";
 
 const CTA = () => (
-  <div className="bg-blue-700">
-    <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-        <span className="block">Stop waiting for your data.</span>
-        <span className="block">Start using Portable today.</span>
+  <div className="relative mt-36 lg:mt-12 lg:w-3/4 md:w-full mx-auto ">
+    <Image className="w-full h-full object-cover " src={techBg} alt="" />
+
+    <div
+      className="text-center absolute top-2/4 left-2/4  leading-relaxed"
+      style={{
+        transform: "translate(-50%, -50%)",
+      }}
+    >
+      <h6 className="font-medium leading-loose md:text-xs lg:text-lg">
+        WASTE LESS TIME, SPEND LESS MONEY, AND SCALE ANYTIME
+      </h6>
+      <h2 className="font-medium lg:text-2xl md:text-md leading-loose">
+        DATA PIPELINES, REINVENTED.{" "}
       </h2>
-      <p className="mt-4 text-lg leading-6 text-blue-200">
-        Pioneer insights and streamline operations with data from all your
-        business applications.
+      <p className="font-medium lg:text-base md:text-xs">
+        With 100+ connectors and counting, we ensure the data in your warehouse
+        is always up to date and accessible by analysts.
       </p>
       <a
-        href={CallsToAction.GetStarted.href}
-        className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto"
+        className="underline font-semibold leading-loose lg:text-base md:text-xs"
+        href="#"
       >
-        {CallsToAction.GetStarted.text}
+        VIEW DOCUMENTATION
       </a>
     </div>
   </div>
