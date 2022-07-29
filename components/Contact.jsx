@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-gray-700 h-96 flex justify-center items-center lg:gap-40 gap-7 md:flex-col lg:flex-row flex-col">
-      <div className="text-white lg:text-left text-center tex">
+    <div className="bg-gray-700 h-96 flex justify-center items-center lg:gap-40 gap-7 md:flex-col lg:flex-row flex-col ">
+      <div className="text-white lg:text-left text-center">
         <h1 className="text-xl font-semibold ">START FOR FREE</h1>
-        <p>
-          Join the thousands of companies <br /> using Fivertran to centralize
+        <p className="sm:w-96 lg:w-full">
+          Join the thousands of companies using <br /> Fivertran to centralize
           and transform their data
         </p>
       </div>
@@ -26,7 +26,7 @@ const Contact = () => {
               style={{
                 marginLeft: "-50px",
               }}
-              className="bg-yellow-300 rounded-full lg:py-4 px-8 text-white font-medium"
+              className="bg-yellow-300 rounded-full lg:py-4 px-8 text-white font-medium cursor-pointer"
               type="submit"
               value="Signup"
             />

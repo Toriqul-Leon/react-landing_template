@@ -38,7 +38,7 @@ const Home = () => (
     <Header />
     <Hero />
     <Features />
-    {/* <CTA /> */}
+    <CTA />
     <Contact></Contact>
     <Footer />
   </>
