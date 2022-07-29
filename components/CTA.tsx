@@ -6,7 +6,7 @@ const CTA = () => (
     <div
       className="flex flex-col items-center justify-center lg:w-full md text-center"
       style={{
-        backgroundImage: `url(../public/resources/technology-bg.png)`,
+        backgroundImage: `url(/resources/technology-bg.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
