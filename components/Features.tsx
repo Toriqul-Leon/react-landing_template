@@ -24,14 +24,16 @@ const Features = () => (
                 key={index}
                 className="max-w-sm bg-white rounded-2xl border border-gray-100 shadow-md dark:bg-gray-800 dark:border-gray-600 w-96"
               >
-                <div className="flex flex-col justify-center items-center h-80 ">
+                <div className="flex flex-col justify-center items-center h-80">
                   <div>
-                    <Image width={90} height={40} src={item.logo} alt="logo" />
+                    <img src={item.logo} alt="logo" />
                   </div>
 
-                  <small className="text-center w-64 font-medium ">
-                    {item["description"]}
-                  </small>
+                  <div className=" h-48">
+                    <small className="text-center w-72  font-medium mt-3 block">
+                      {item["description"]}
+                    </small>
+                  </div>
                 </div>
               </div>
             );

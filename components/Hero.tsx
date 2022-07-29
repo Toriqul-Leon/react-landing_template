@@ -25,7 +25,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <div className="hidden lg:block absolute top-5 right-80">
+    <div className="hidden lg:block absolute top-5 right-0">
       <Image height={400} src={bannerBg} alt="" />
     </div>
   </div>
